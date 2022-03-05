@@ -18,6 +18,9 @@ body {
     color: #fff;
 }
 
+.hidden{
+    opacity: 0;
+}
 
 /* Typeography General*/
 h1 {
@@ -92,6 +95,14 @@ section {
     transition: ease 0.3s all;
 }
 
+@media(max-width: 35em){
+    .navbar__menu .menu__link{
+        font-size: 0.8em;
+    }
+    section{
+        font-size: 0.85em;
+    }
+}
 /* Header Styles */
 .page__header {
     background: #fff;
@@ -99,6 +110,10 @@ section {
     top: 0;
     width: 100%;
     z-index: 5;
+    transition: 0.5s;
+}
+.page__header:hover{
+    opacity: 1;
 }
 
 /* Footer Styles */
@@ -225,3 +240,4 @@ section.your-active-class .landing__container::after {
 		           rotate(-360deg);
 	}
 }
+
